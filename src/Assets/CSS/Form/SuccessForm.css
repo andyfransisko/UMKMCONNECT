@@ -1,0 +1,100 @@
+.success-form-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    background-image: url("../../Images/BG-Success.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.success-form-image{
+    grid-column: 2/6;
+    grid-row: 3/7;
+    align-self: center;
+    justify-self: center;
+}
+
+.success-form-header-1{
+    grid-column: 2/6;
+    grid-row: 7;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.success-form-header-2{
+    grid-column: 2/6;
+    grid-row: 8;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.success-form-img-size{
+    width: 500px;
+}
+
+.success-form-container h1{
+    font-size: 64px;
+    color: var(--primary-color);
+    margin-block-end: 0;
+}
+
+.success-form-container h2{
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+.success-header-2{
+    grid-column: 2/6;
+    grid-row: 6;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.success-header-3{
+    grid-column: 2/6;
+    grid-row: 7;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .success-form-img-size{
+        width: 100%;
+    }
+    
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .success-form-img-size{
+        width: 500px;
+    }
+
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .success-form-img-size{
+        width: 500px;
+    }
+   
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    .success-form-img-size{
+        width: 500px;
+    }
+
+}

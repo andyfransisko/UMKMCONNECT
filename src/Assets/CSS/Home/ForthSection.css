@@ -1,0 +1,120 @@
+/* ----- Forth Section ----- */
+.forth-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.forth-header1{
+    grid-column: 2/4;
+    grid-row: 2;
+    align-self: start;
+    justify-self: end;
+    text-align: right;
+    z-index: 2;
+}
+
+.forth-picture{
+    grid-column: 4/6;
+    grid-row: 1/4;
+    justify-self: center;
+    align-self: center;
+    z-index: 1;
+}
+
+.forth-pic-img-size{
+    width: 650px;
+}
+
+.forth-container h2{
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-block-end: 0;
+}
+
+.forth-container h3{
+    font-size: 18px;  
+    color: var(--light-color);
+    line-height: 25px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .forth-picture{
+        grid-column: 2/6;
+        grid-row: 2/5;
+    }
+
+    .forth-header1{
+        grid-column: 2/6;
+        grid-row: 5;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .forth-pic-img-size{
+        width: 100%;
+    }
+
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+    .forth-picture{
+        grid-column: 2/6;
+        grid-row: 2/5;
+    }
+
+    .forth-header1{
+        grid-column: 2/6;
+        grid-row: 5;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .forth-pic-img-size{
+        width: 600px;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .forth-picture{
+        grid-column: 2/6;
+        grid-row: 2/5;
+    }
+
+    .forth-header1{
+        grid-column: 2/6;
+        grid-row: 5;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .forth-pic-img-size{
+        width: 650px;
+    }
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .forth-picture{
+        grid-column: 4/6;
+        grid-row: 1/4;
+    }
+
+    .forth-header1{
+        grid-column: 2/4;
+        grid-row: 2;
+        justify-self: end;
+        text-align: right;
+    }
+
+    .forth-pic-img-size{
+        width: 650px;
+    }
+}

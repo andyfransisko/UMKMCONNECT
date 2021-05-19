@@ -1,0 +1,101 @@
+/* Navbar */
+.navbar{
+    position: fixed;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: right;
+    z-index: 100;
+    
+  }
+    
+  ul {
+    /*border: 2px solid white;*/
+    list-style-type: none;
+    margin: 14px; 
+    padding-top: 15px;
+    background-color: transparent;
+    font-size: 17px;
+  }
+    
+  li {
+    display: inline;
+    color: var(--white-color);
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+  }
+      
+  /* Navbar Logo */
+  .small-img-width{
+    width: 50px;
+    vertical-align: middle;
+  }
+  
+  .underlined-effect{
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+  }
+  .underlined-effect:hover{
+    border-bottom: 2px solid var(--white-color);
+    transition: 1.2s;
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .small-img-width{
+    top: -2px;
+    width: 30px;
+  }
+
+  li{
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .small-img-width{
+    top: -8px;
+    width: 40px;
+  }
+
+  li{
+    padding-left: 13px;
+    padding-right: 13px;
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .small-img-width{
+    top: -12px;
+    width: 45px;
+  }
+
+  li{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .small-img-width{
+    top: -12px;
+    width: 50px;
+  }
+
+  li{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 17px;
+  }
+}

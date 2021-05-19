@@ -1,0 +1,158 @@
+/* ----- Footer ----- */
+footer{
+    background-color: var(--primary-color);
+    margin-top: 100px;
+    color: var(--white-color);
+}
+  
+.foot-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+}
+  
+.foot-about-head{
+    grid-column: 4 / 10;
+    grid-row: 2;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+  
+.foot-about-desc{
+    grid-column: 4 / 10;
+    grid-row: 3;
+    font-size: 16px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    line-height: 22px;
+}
+
+.foot-sosmed{
+    grid-column: 4/10;
+    grid-row: 5;
+    align-self: center;
+    justify-self: center;
+}
+
+.foot-email{
+    grid-column: 4/10;
+    grid-row: 6;
+    justify-self: center;
+    align-self: center;
+}
+  
+.foot-copy{
+    grid-column: 1/13;
+    grid-row: 7;
+    background-color: #6b0a0f;
+}
+
+.foot-copy-info{
+    grid-column: 4/10;
+    grid-row: 7;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    font-size: 10px;
+}
+
+.foot-about-head h2{
+    font-size: 30px;
+}
+
+.foot-link1 b:hover{
+    color:var(--secondary-color);
+}
+
+.foot-link2 b:hover{
+    color:var(--secondary-color);
+}
+
+.foot-link3 b:hover{
+    color:var(--secondary-color);
+}
+
+.foot-link4 b:hover{
+    color:var(--secondary-color);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .foot-about-head{
+        grid-column: 2 / 12;
+    }
+      
+    .foot-about-desc{
+        grid-column: 2 / 12;
+    }
+    
+    .foot-email{
+        grid-column: 1/13;
+    }
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .foot-about-head{
+        grid-column: 3 / 11;
+    }
+      
+    .foot-about-desc{
+        grid-column: 3 / 11;
+    }
+
+    .foot-email{
+        grid-column: 3/11;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .foot-about-head{
+        grid-column: 4 / 10;
+    }
+      
+    .foot-about-desc{
+        grid-column: 3 / 11;
+    }
+
+    .foot-email{
+        grid-column: 4/10;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 912px) {
+    
+    .foot-about-head{
+        grid-column: 4 / 10;
+    }
+      
+    .foot-about-desc{
+        grid-column: 3 / 11;
+    }
+
+    .foot-email{
+        grid-column: 4/10;
+    }
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .foot-about-head{
+        grid-column: 4 / 10;
+    }
+      
+    .foot-about-desc{
+        grid-column: 4 / 10;
+    }
+
+    .foot-email{
+        grid-column: 4/10;
+    }
+}
